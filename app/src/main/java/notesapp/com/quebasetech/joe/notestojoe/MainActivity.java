@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity
     String[] listValues = new String[] {
       "Introduction", "Required-tools", "Android Studio", "First sample Program", "Volume Calculator", "Toast","Unit Converter","Media Player","Mode Changer","Text to Speak", "Rate App"
     };
+    String[] activityIntents = new String[] {
+
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,13 +59,20 @@ public class MainActivity extends AppCompatActivity
         listViewNormal.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 0){
-                    // Launch intent
-                    Intent intro = new Intent(ctx, Introduction.class);
-                    ctx.startActivity(intro);
-                } else{
-                    Toast.makeText(MainActivity.this, listValues[position] + " selected", Toast.LENGTH_SHORT).show();
+                Intent intent;
+                switch (position){
+                    case 0:
+                        intent = new Intent(ctx, Introduction.class);
+                        break;
+                    case 4:
+                        intent = new Intent(ctx, volume_calculator.class);
+                        break;
+                    default:
+                        intent = new Intent(ctx, Introduction.class);
+                        Toast.makeText(MainActivity.this, listValues[position] + " selected", Toast.LENGTH_SHORT).show();
                 }
+
+                ctx.startActivity(intent);
             }
         });
     }
