@@ -1,6 +1,7 @@
 package notesapp.com.quebasetech.joe.notestojoe;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -55,7 +56,13 @@ public class MainActivity extends AppCompatActivity
         listViewNormal.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, listValues[position] + " selected", Toast.LENGTH_SHORT).show();
+                if(position == 0){
+                    // Launch intent
+                    Intent intro = new Intent(ctx, Introduction.class);
+                    ctx.startActivity(intro);
+                } else{
+                    Toast.makeText(MainActivity.this, listValues[position] + " selected", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
