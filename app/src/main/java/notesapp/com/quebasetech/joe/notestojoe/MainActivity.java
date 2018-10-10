@@ -67,6 +67,9 @@ public class MainActivity extends AppCompatActivity
                     case 4:
                         intent = new Intent(ctx, volume_calculator.class);
                         break;
+                    case 6:
+                        intent = new Intent(ctx, unit_converter.class);
+                        break;
                     default:
                         intent = new Intent(ctx, Introduction.class);
                         Toast.makeText(MainActivity.this, listValues[position] + " selected", Toast.LENGTH_SHORT).show();

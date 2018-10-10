@@ -10,4 +10,11 @@
     <string name="introduction_to_android">Introduction To Android</string>
     <string name="intro_text">To add an EditText to the TextInputLayout, switch to the layout editor’s Text view, then change the TextInputLayout element’s closing to , position the cursor to the right of the , press Enter and type . The IDE will auto-complete the closing tag. Between the TextInputLayout’s starting and ending tags, type EditText. The IDE will show an auto-complete window with EditText selected. Press Enter to insert an EditText, then set its layout_width to match_parent and layout_height to wrap_content. In Design view, set the EditText’s id to locationEditText, check its singleLine property’s checkbox and set its hint property to the String resource hint_text</string>
     <string name="title_activity_volume_calculator">Volume Calculator</string>
+    <string name="unit_converter_title">Enter a value in the Text Box and select Checkbox to convert into them.</string>
+    <string name="enter_inches_here">Enter inches here ...</string>
+    <string name="foot">Foot</string>
+    <string name="meter">Meter</string>
+    <string name="kilometer">Kilometer</string>
+    <string name="select_units">Select units</string>
+    <string name="convert">CONVERT</string>
 </resources>
