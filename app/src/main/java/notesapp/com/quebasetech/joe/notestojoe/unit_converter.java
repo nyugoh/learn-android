@@ -2,6 +2,8 @@ package notesapp.com.quebasetech.joe.notestojoe;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -22,6 +24,31 @@ public class unit_converter extends AppCompatActivity {
 
         allocateMemory();
         setupEvents();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.color) {
+            Toast.makeText(getApplicationContext(), "Color selected", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if (id == R.id.backgroundOption) {
+            Toast.makeText(getApplicationContext(), "Background color selected", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if (id == R.id.others) {
+            Toast.makeText(getApplicationContext(), "Others selected", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private void allocateMemory() {

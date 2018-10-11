@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
     Context ctx;
     ListView listViewNormal;
     String[] listValues = new String[] {
-      "Introduction", "Required-tools", "Android Studio", "First sample Program", "Volume Calculator", "Toast","Unit Converter","Explicit intent", "Implicit Intent", "Notifications","Text to Speak", "Rate App"
+      "Introduction", "Required-tools", "Android Studio", "First sample Program", "Volume Calculator", "Toast","Unit Converter","Explicit intent", "Implicit Intent", "Notifications","Text to Speak", "Rate App", "Menus"
     };
     String[] activityIntents = new String[] {
 
@@ -81,10 +81,12 @@ public class MainActivity extends AppCompatActivity
                         break;
                     case 10:
                         intent = new Intent(ctx, Rating_App.class);
+                    case 12:
+                        intent = new Intent(ctx, Menus.class);
                         break;
                     default:
                         intent = new Intent(ctx, Introduction.class);
-                        Toast.makeText(MainActivity.this, listValues[position] + " selected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, listValues[position] + " selected, index:" + position, Toast.LENGTH_SHORT).show();
                 }
 
                 ctx.startActivity(intent);

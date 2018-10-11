@@ -40,7 +40,9 @@
         <activity android:name=".Home_page" />
         <activity android:name=".Implicit_Intent" />
         <activity android:name=".Notifications" />
-        <activity android:name=".Notifications_view"></activity>
+        <activity android:name=".Notifications_view" />
+        <activity android:name=".Menus" />
+        <activity android:name=".OptionsMenu"></activity>
     </application>
 
 </manifest>
