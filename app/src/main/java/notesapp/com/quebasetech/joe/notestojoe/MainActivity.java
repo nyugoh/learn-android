@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity
                     case 6:
                         intent = new Intent(ctx, unit_converter.class);
                         break;
+                    case 7:
+                        intent = new Intent(ctx, Explicit_intent.class);
+                        break;
                     case 10:
                         intent = new Intent(ctx, Rating_App.class);
                         break;
