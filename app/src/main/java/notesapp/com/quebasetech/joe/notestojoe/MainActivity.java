@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
     Context ctx;
     ListView listViewNormal;
     String[] listValues = new String[] {
-      "Introduction", "Required-tools", "Android Studio", "First sample Program", "Volume Calculator", "Toast","Unit Converter","Media Player","Mode Changer","Text to Speak", "Rate App"
+      "Introduction", "Required-tools", "Android Studio", "First sample Program", "Volume Calculator", "Toast","Unit Converter","Explicit intent","Mode Changer","Text to Speak", "Rate App"
     };
     String[] activityIntents = new String[] {
 
@@ -69,6 +69,9 @@ public class MainActivity extends AppCompatActivity
                         break;
                     case 6:
                         intent = new Intent(ctx, unit_converter.class);
+                        break;
+                    case 10:
+                        intent = new Intent(ctx, Rating_App.class);
                         break;
                     default:
                         intent = new Intent(ctx, Introduction.class);

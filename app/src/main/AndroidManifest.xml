@@ -28,7 +28,8 @@
             android:name=".VolumeCalculator"
             android:label="@string/title_activity_volume_calculator"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".unit_converter"></activity>
+        <activity android:name=".unit_converter" />
+        <activity android:name=".Rating_App"></activity>
     </application>
 
 </manifest>
