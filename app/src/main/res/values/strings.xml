@@ -17,4 +17,6 @@
     <string name="kilometer">Kilometer</string>
     <string name="select_units">Select units</string>
     <string name="convert">CONVERT</string>
+    <string name="implicit_title"><![CDATA[Enter field 1 & 2 and perform relavant action.]]></string>
+    <string name="firstValue">Mobile No/ Email id/URL/Latitude</string>
 </resources>
