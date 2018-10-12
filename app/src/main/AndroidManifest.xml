@@ -42,7 +42,8 @@
         <activity android:name=".Notifications" />
         <activity android:name=".Notifications_view" />
         <activity android:name=".Menus" />
-        <activity android:name=".OptionsMenu"></activity>
+        <activity android:name=".OptionsMenu" />
+        <activity android:name=".Order_list"></activity>
     </application>
 
 </manifest>
