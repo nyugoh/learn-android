@@ -25,25 +25,52 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Introduction" />
+        <activity android:name=".Introduction"
+            android:parentActivityName=".MainActivity"
+            android:label="Introduction to Android"
+            />
         <activity
             android:name=".volume_calculator"
             android:label="@string/title_activity_volume_calculator"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".VolumeCalculator"
-            android:label="@string/title_activity_volume_calculator"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".unit_converter" />
-        <activity android:name=".Rating_App" />
-        <activity android:name=".Explicit_intent" />
-        <activity android:name=".Home_page" />
-        <activity android:name=".Implicit_Intent" />
-        <activity android:name=".Notifications" />
-        <activity android:name=".Notifications_view" />
-        <activity android:name=".Menus" />
-        <activity android:name=".OptionsMenu" />
-        <activity android:name=".Order_list"></activity>
+            android:parentActivityName=".MainActivity"
+            android:label="Unit converter"
+            android:name=".unit_converter" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Rate me"
+            android:name=".Rating_App" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Explicit intent"
+            android:name=".Explicit_intent" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".Home_page" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Implicit intents"
+            android:name=".Implicit_Intent" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Notifications"
+            android:name=".Notifications" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".Notifications_view" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Menus, Options and popup"
+            android:name=".Menus" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Options menu"
+            android:name=".OptionsMenu" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Orders, Custom list view"
+            android:name=".Order_list"></activity>
     </application>
 
 </manifest>
