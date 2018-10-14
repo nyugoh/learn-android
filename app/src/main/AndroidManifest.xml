@@ -25,52 +25,60 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Introduction"
-            android:parentActivityName=".MainActivity"
+        <activity
+            android:name=".Introduction"
             android:label="Introduction to Android"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".volume_calculator"
             android:label="@string/title_activity_volume_calculator"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
+            android:name=".unit_converter"
             android:label="Unit converter"
-            android:name=".unit_converter" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
+            android:name=".Rating_App"
             android:label="Rate me"
-            android:name=".Rating_App" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
+            android:name=".Explicit_intent"
             android:label="Explicit intent"
-            android:name=".Explicit_intent" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:name=".Home_page" />
+            android:name=".Home_page"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
+            android:name=".Implicit_Intent"
             android:label="Implicit intents"
-            android:name=".Implicit_Intent" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
+            android:name=".Notifications"
             android:label="Notifications"
-            android:name=".Notifications" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:name=".Notifications_view" />
+            android:name=".Notifications_view"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
+            android:name=".Menus"
             android:label="Menus, Options and popup"
-            android:name=".Menus" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
+            android:name=".OptionsMenu"
             android:label="Options menu"
-            android:name=".OptionsMenu" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
+            android:name=".Order_list"
             android:label="Orders, Custom list view"
-            android:name=".Order_list"></activity>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ScreenResolution"
+            android:label="Screen orientation and resolution"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".OrientationsConfig"
+            android:label="Configuration Qualifiers"
+            android:parentActivityName=".ScreenResolution"
+            ></activity>
     </application>
 
 </manifest>
